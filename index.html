@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>English Pronunciation Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>English Pronunciation Game</h1>
+        <div class="settings">
+            <label for="difficulty">Word Difficulty:</label>
+            <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+
+            <label for="accuracy">Judging Difficulty:</label>
+            <select id="accuracy">
+                <option value="80">Easy (80%)</option>
+                <option value="90">Medium (90%)</option>
+                <option value="95">Hard (95%)</option>
+            </select>
+        </div>
+
+        <div id="word-display"></div>
+        <div id="say-message" style="display:none;">Say!</div> <!-- "Say!" 메시지 추가 -->
+        <div class="buttons">
+            <button id="start-button">Start Game</button>
+            <button id="restart-button" style="display:none;">Restart</button>
+            <button id="listen-button" style="display:none;">Listen to Pronunciation</button>
+            <button id="retry-button" style="display:none;">Retry</button>
+        </div>
+
+        <p id="instructions">Press the button and pronounce the word displayed.</p>
+        <p id="result"></p>
+        <p id="lives">Lives: 3</p>
+        <p id="score">Score: 0</p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
